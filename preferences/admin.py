@@ -20,5 +20,5 @@ class PreferencesAdmin(admin.ModelAdmin):
             return super(PreferencesAdmin, self).changelist_view(request)
         else:
             obj = model.singleton.get()
-            return redirect(reverse('admin:preferences_%s_change' % \
-                    model._meta.module_name, args=(obj.id,)))
+            return redirect(reverse('admin:%s_%s_change' % \
+                    (model._meta.app_label, model._meta.module_name), args=(obj.id,)))
