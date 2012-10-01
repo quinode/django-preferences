@@ -3,6 +3,7 @@ from django.dispatch import receiver
 
 import preferences
 from preferences.managers import SingletonManager
+from django.utils.translation import ugettext_lazy as _
 
 
 class Preferences(models.Model):
@@ -18,11 +19,11 @@ class Preferences(models.Model):
         prefix = self._meta.verbose_name_plural.capitalize()
 
         if len(site_names) > 1:
-            return '%s for sites %s and %s.' % (prefix, ', '.\
+            return _('{0} for sites {1} and {2}.').format(prefix, ', '.\
                     join(site_names[:-1]), site_names[-1])
         elif len(site_names) == 1:
-            return '%s for site %s.' % (prefix, site_names[0])
-        return '%s without assigned site.' % prefix
+            return _('{0} for site {1}.').format(prefix, site_names[0])
+        return _('{0} without assigned site.').format(prefix)
 
 
 @receiver(models.signals.class_prepared)

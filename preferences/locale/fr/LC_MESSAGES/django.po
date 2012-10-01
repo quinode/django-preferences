@@ -1,0 +1,32 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: django-preferences\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-01 15:32+0200\n"
+"PO-Revision-Date: 2012-10-01 15:34+0100\n"
+"Last-Translator: Dominique Guardiola <dguardiola@quinode.fr>\n"
+"Language-Team: Quinode <contact@quinode.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.5.3\n"
+"Language: fr_FR\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: models.py:22
+msgid "{0} for sites {1} and {2}."
+msgstr "{0} pour les sites {1} et {2}."
+
+#: models.py:25
+msgid "{0} for site {1}."
+msgstr "{0} pour le site {1}."
+
+#: models.py:26
+msgid "{0} without assigned site."
+msgstr "{0} pas encore assignée à un site."
