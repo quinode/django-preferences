@@ -16,7 +16,7 @@ setup(
     ],
     include_package_data=True,
     install_requires = [
-        'Django',
+#        'Django',
     ],
     classifiers=[
         "Programming Language :: Python",
